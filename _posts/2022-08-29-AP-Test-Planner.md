@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: COllegeboard Requirements
+categories: [markdown]
+title: AP Test Planner
+---
+
 ### Capture information that will grow to 10 CB Units
 - I will make sure that I keep up to date with the collegeboard videos
   - Keep my jupyter notebooks organized with approriate titles for studying
