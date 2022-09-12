@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Title | fastpages</title>
+<title>If Statement Notes | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="If Statement Notes" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-11T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Title" />
+<meta property="twitter:title" content="If Statement Notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-11T00:00:00-05:00","datePublished":"2022-09-11T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://pranavp04.github.io/OfficialTri1PranavCSA/2022/09/11/if-else-examples-lesson.html"},"url":"https://pranavp04.github.io/OfficialTri1PranavCSA/2022/09/11/if-else-examples-lesson.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-11T00:00:00-05:00","datePublished":"2022-09-11T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"If Statement Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://pranavp04.github.io/OfficialTri1PranavCSA/2022/09/11/if-else-examples-lesson.html"},"url":"https://pranavp04.github.io/OfficialTri1PranavCSA/2022/09/11/if-else-examples-lesson.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/OfficialTri1PranavCSA/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pranavp04.github.io/OfficialTri1PranavCSA/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/OfficialTri1PranavCSA/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,13 +73,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-11T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">If Statement Notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-11T00:00:00-05:00" itemprop="datePublished">
         Sep 11, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -125,6 +125,295 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>A conditional statement lets us choose which
+statement will be executed next
+  • Therefore they are sometimes called selection
+statements
+  • Conditional statements give us the power to make
+basic decisions
+  • The Java conditional statements are the:
+<pre><code>  – if statement
+  – if-else statement
+  – switch statement
+</code></pre>
+# Boolean Notes</li>
+<li>The Boolean logical operators are : | , &amp; , ^ , ! , || , &amp;&amp; , == , != .</li>
+<li>Java supplies a primitive data type called Boolean, instances of which can take the value true or false only, and have the default value false. </li>
+<li>The major use of Boolean facilities is to implement the expressions which control if decisions and while loops.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isSoccerFan</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span><span class="c1">//If you set a variable along with the word &quot;boolean&quot; to true, </span>
+<span class="c1">//this allows for the if statements to print the correct statements </span>
+<span class="k">if</span><span class="p">(</span><span class="n">isSoccerFan</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Watches 1 Soccer Game Every Weekend&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Watches 0 Soccer Games&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Watches 1 Soccer Game Every Weekend
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">weight</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+<span class="c1">//Weights Are Rounded to Nearest 10(in pounds) between 130-250lbs</span>
+<span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">130</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Are Very Light&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">140</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Are Quite Light&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">150</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Are A Little Bit On The Lighter Side&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">160</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are At A Good Weight&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">170</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are At A Good Weight&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">180</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are At A Strong Weight&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">190</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Very Close To Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">200</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Just Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">210</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Slightly Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">220</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Nearly Moderately Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">230</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Moderately Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">240</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Nearly Very Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">weight</span><span class="o">==</span><span class="mi">250</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Very Obese&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You Are Just Obese
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Switch-Statement-Notes">Switch Statement Notes<a class="anchor-link" href="#Switch-Statement-Notes"> </a></h1><ul>
+<li>A switch statement allows a variable to be tested for equality against a list of values.</li>
+<li>Each value is called a case, and the variable being switched on is checked for each case.</li>
+<li>The variable used in a switch statement can only be integers, convirtable integers (byte, short, char), strings and enums.</li>
+<li>You can have any number of case statements within a switch.</li>
+<li>End of each statement is followed with a comparable value and a colon.</li>
+<li>The value for a case must be the same data type as the variable in the switch and it must be a constant or a literal.</li>
+<li>When the variable being switched on is equal to a case, the statements following that case will execute until a break statement is reached.</li>
+<li>When a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">weight</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+<span class="c1">//Weights Are Rounded to Nearest 10(in pounds) between 130-250lbs. Intended for indivduals between the height of 5&#39;8 to 5&#39;11</span>
+<span class="k">switch</span><span class="p">(</span><span class="n">weight</span><span class="p">){</span>
+    
+    <span class="k">case</span> <span class="mi">130</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You are Very Light&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+    
+    <span class="k">case</span> <span class="mi">140</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Are Very Light&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+    
+    <span class="k">case</span> <span class="mi">150</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your Are A Little Bit On The Lighter Side&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">160</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are At A Good Weight&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">170</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are At A Good Weight&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+    
+    <span class="k">case</span> <span class="mi">180</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are At A Strong Weight&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+    
+    <span class="k">case</span> <span class="mi">190</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Very Close To Obese&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+    
+    <span class="k">case</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Just Obese&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">210</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Slightly Obese&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">220</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Nearly Moderately Obese&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">230</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Moderately Obese&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">240</span><span class="p">:</span>
+         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Nearly Very Obese&quot;</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">250</span><span class="p">:</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You Are Very Obese&quot;</span><span class="p">);</span>
+         <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You Are Just Obese
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="DeMorgan's-Law-Notes">DeMorgan's Law Notes<a class="anchor-link" href="#DeMorgan's-Law-Notes"> </a></h1><ul>
+<li>DeMorgan’s laws were developed by Augustus De Morgan in the 1800s.</li>
+<li>They show how to handle the negation of a complex conditional, which is a conditional statement with more than one condition joined by an and (&amp;&amp;) or or (||), such as (x &lt; 3) &amp;&amp; (y &gt; 2).</li>
+<li>Applying DeMorgan’s Laws to !(x &lt; 3 &amp;&amp; y &gt; 2) yields !(x &lt; 3) || !(y &gt; 2) which means that this complex conditional will be true when (x &gt;= 3 || y &lt;= 2).</li>
+<li>The negation modifies each conditional as shown below.<ul>
+<li>&lt; becomes &gt;=</li>
+<li>"&gt; becomes &lt;="</li>
+<li>== becomes !=</li>
+<li>&lt;= becomes &gt;</li>
+<li>"&gt;= becomes &lt;"</li>
+<li>!= becomes ==</li>
+</ul>
+</li>
+<li>not (a and b) is the same as (not a) or (not b). In Java this is written as !(a &amp;&amp; b) == !a || !b</li>
+<li>not (a or b) is the same as (not a) and (not b). In Java this is written as !(a || b) == !a &amp;&amp; !b</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DeMorgansLawExample</span> <span class="p">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="n">exVarOne</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="n">exVarTwo</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// The two boolean expressions below are equal</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">exVarOne</span> <span class="o">&amp;&amp;</span> <span class="n">exVarTwo</span><span class="p">))</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The boolean expression is true&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The boolean expression is false&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">exVarOne</span> <span class="o">||</span> <span class="o">!</span><span class="n">exVarTwo</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The boolean expression is true&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The boolean expression is false&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
