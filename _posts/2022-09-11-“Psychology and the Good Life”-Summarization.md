@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: Takeaways, Grattitude list, and Future goals
+categories: [markdown]
+title: Human Day/Psychology Video Notes
+---
+
 # Takeaways From Video
 - All successful people find ways to keep themselves under a good/calm state of mind in order to be the most effective in a work setting
 - Many people think that making mistakes and not succeeding at first is bad. 
