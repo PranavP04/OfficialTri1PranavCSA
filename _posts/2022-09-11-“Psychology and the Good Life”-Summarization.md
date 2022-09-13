@@ -8,6 +8,7 @@ title: Human Day/Psychology Video Notes
 
 # Takeaways From Video
 - All successful people find ways to keep themselves under a good/calm state of mind in order to be the most effective in a work setting
+![image](https://user-images.githubusercontent.com/89223545/189971960-1b3f2ff6-f005-4294-8a1c-8b63fa6f2a0c.png)
 - Many people think that making mistakes and not succeeding at first is bad. 
   - In reality, if you ask any successful person about failure, they will respond by saying that in order to succeed in life you must taste the defeat of failure
 - She also stated, that it is very important for people to reflect on the many different gifts we are given in life
@@ -24,3 +25,7 @@ title: Human Day/Psychology Video Notes
 - To be the best version of myself in all aspects of life
   - School, friends, family member, and athlete
 - Make sure to reflect on my wrongdoings and thnk about what I can do in the future to avoid these mistakes for reoccurring
+![image](https://user-images.githubusercontent.com/89223545/189971461-dd1ced39-dc78-4b16-9069-2c5b70bd61aa.png)
+![image](https://user-images.githubusercontent.com/89223545/189971750-fff19c18-4cc4-4448-a889-526197653b5f.png)
+
+
