@@ -37,10 +37,14 @@ url: "https://PranavP04.github.io" # the base hostname & protocol for your site,
 baseurl: "/OfficialTri1PranavCSA" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
-  social_links:
-    twitter: fastdotai
-    github: fastai
+# minima:
+#   # social_links:
+#   #   twitter: fastdotai
+#   #   github: fastai
+#     social_links:
+#     - { platform: github, user_url: "https://github.com/nighthawkcoders"%7D }
+#     - { platform: twitter, user_url: "https://twitter.com/NighthawkCoding"%7D}
+#     - { platform: youtube, user_url: "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q"%7D}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
