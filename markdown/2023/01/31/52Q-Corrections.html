@@ -98,21 +98,21 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#score-4552">Score: 45/52</a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#question-4">Question 4</a></li>
-<li class="toc-entry toc-h2"><a href="#question-11">Question 11</a></li>
-<li class="toc-entry toc-h2"><a href="#question-18">Question 18</a></li>
-<li class="toc-entry toc-h2"><a href="#question-23">Question 23</a></li>
-<li class="toc-entry toc-h2"><a href="#question-24">Question 24</a></li>
-<li class="toc-entry toc-h2"><a href="#question-34">Question 34</a></li>
-<li class="toc-entry toc-h2"><a href="#question-52">Question 52</a></li>
+<li class="toc-entry toc-h2"><a href="#question-7">Question 7</a></li>
+<li class="toc-entry toc-h2"><a href="#question-9">Question 9</a></li>
+<li class="toc-entry toc-h2"><a href="#question-19">Question 19</a></li>
+<li class="toc-entry toc-h2"><a href="#question-30">Question 30</a></li>
+<li class="toc-entry toc-h2"><a href="#question-36">Question 36</a></li>
+<li class="toc-entry toc-h2"><a href="#question-44">Question 44</a></li>
+<li class="toc-entry toc-h2"><a href="#question-48">Question 48</a></li>
 </ul>
 </li>
 </ul><h1 id="score-4552">
 <a class="anchor" href="#score-4552" aria-hidden="true"><span class="octicon octicon-link"></span></a>Score: 45/52</h1>
 
-<h2 id="question-4">
-<a class="anchor" href="#question-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 4</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725027-0ddd3aa8-0d29-4558-9c75-8b4461577e9d.png" alt="image"></p>
+<h2 id="question-7">
+<a class="anchor" href="#question-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 7</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215845077-9f34b92c-0a7c-4508-862b-374afe0d5a1d.png" alt="image"></p>
 <ul>
   <li>Answer B
 Incorrect. This would be the result if the division used was floating point division, instead of integer division. This would be the case if either x or y were of type double instead of type int or if either value was typecast as a double in the expression.</li>
@@ -121,9 +121,9 @@ Correct. When we evaluate the express(x &lt; 10) &amp;&amp; (y &lt; 0) for x hav
   <li>This was more of a conceptual error as I didn’t read the code segment thoroughly resulting in the wrong output being displayed when I looked at it.</li>
 </ul>
 
-<h2 id="question-11">
-<a class="anchor" href="#question-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 11</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725117-f9e4cab8-ced9-4abd-88bd-9ad28380872b.png" alt="image"></p>
+<h2 id="question-9">
+<a class="anchor" href="#question-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 9</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215845166-aab9e016-471c-4ebe-a353-2462661b7074.png" alt="image"></p>
 <ul>
   <li>Answer A
 Incorrect. This will prevent an ArrayIndexOutOfBoundsException from being thrown if target does not appear in data, however if target is at element 0, -1 will be returned instead of 0 as intended.</li>
@@ -132,9 +132,9 @@ Correct. The seqSearchRecHelper recursive method does not work as intended when 
   <li>I did this wrong because if you look at the function, the main target wasn’t displaying the correct output.</li>
 </ul>
 
-<h2 id="question-18">
-<a class="anchor" href="#question-18" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 18</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725184-acda4587-ef65-442a-ae74-871fd7f26cdb.png" alt="image"></p>
+<h2 id="question-19">
+<a class="anchor" href="#question-19" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 19</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215845390-8f20aab0-0c25-4407-8d13-23c09f409382.png" alt="image"></p>
 <ul>
   <li>Answer D
 Incorrect. The indices for myList are 0 through myList.size() – 1, for a total of myList.size() elements. Adding 1 to myList.size() and then multiplying Math.random() by this value results in a range that is from 0 to myList.size(), which is one element too many.</li>
@@ -143,9 +143,9 @@ Correct. The indices for myList are 0 through myList.size() – 1, for a total o
   <li>In order to get this correct in the future, I plan on studying both topic 2.9 and 7.2 as they cover Arraylists.</li>
 </ul>
 
-<h2 id="question-23">
-<a class="anchor" href="#question-23" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 23</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725250-216fe022-a538-49a8-b9da-131f201e6045.png" alt="image"></p>
+<h2 id="question-30">
+<a class="anchor" href="#question-30" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 30</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215845554-da12ff50-c390-4f3b-84f2-7c6f5778c5a3.png" alt="image"></p>
 <ul>
   <li>Answer C
 Incorrect. List is an interface, which an ArrayList implements. Please note that List is no longer tested as part of the AP CSA exam and ArrayList will be used instead. This would be the correct answer if the remove occurred before the size was calculated in the statement animals.add(animals.size()-k, animals.remove(k)); and only one iteration of the loop occurred.</li>
@@ -154,9 +154,9 @@ Correct. List is an interface, which an ArrayList implements. Please note that L
   <li>To fix this I will focus on topics 2.7 and 7.4 as they cover instatizing and initializing lists.</li>
 </ul>
 
-<h2 id="question-24">
-<a class="anchor" href="#question-24" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 24</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725281-c7e46bb6-4757-42da-9f65-dcc58a5c135a.png" alt="image"></p>
+<h2 id="question-36">
+<a class="anchor" href="#question-36" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 36</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215845676-fea706c2-a81c-4b41-8ad1-5ee52376f148.png" alt="image"></p>
 <ul>
   <li>Answer C
 Incorrect. The value 5 is at newArray[1][1].</li>
@@ -165,9 +165,9 @@ Correct. The enhanced for loop iterates over the array oldArray. In the first it
   <li>Resources: 8.1: Daily Video 1 (Skill 3.E), 8.1: Daily Video 2 (Skill 3.E), 8.1: Daily Video 3 (Skill 1.B)</li>
 </ul>
 
-<h2 id="question-34">
-<a class="anchor" href="#question-34" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 34</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725349-c765eeb1-f822-413c-8a52-2f73740eb48c.png" alt="image"></p>
+<h2 id="question-44">
+<a class="anchor" href="#question-44" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 44</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215845952-c407d378-3c3c-4830-83dc-19143db29067.png" alt="image"></p>
 <ul>
   <li>Answer D
 Incorrect. Choice III uses the default Point constructor to assign center a new Point with x and y both equal to 0. It attempts to update x and y, however since they are private instance variables in Point, they are not able to be accessed directly in Circle. This code will cause a compile time error.</li>
@@ -176,9 +176,9 @@ Correct. Choice I uses the no parameter Point constructor to assign center a new
   <li>There is a compiling error that comes out of the answer in option D due to the way in which the constructor assigns a new point.</li>
 </ul>
 
-<h2 id="question-52">
-<a class="anchor" href="#question-52" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 52</h2>
-<p><img src="https://user-images.githubusercontent.com/89223545/200725027-0ddd3aa8-0d29-4558-9c75-8b4461577e9d.png" alt="image"></p>
+<h2 id="question-48">
+<a class="anchor" href="#question-48" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 48</h2>
+<p><img src="https://user-images.githubusercontent.com/89223545/215846149-d7320e3a-d78a-4545-b77b-0850e855d553.png" alt="image"></p>
 <ul>
   <li>Answer B
 Incorrect. This would be the result if the division used was floating point division, instead of integer division. This would be the case if either x or y were of type double instead of type int or if either value was typecast as a double in the expression.</li>
