@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -24,7 +24,66 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#what-is-a-pojo">What is a POJO</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#characteristics-of-a-pojo">Characteristics of a POJO</a></li>
+<li class="toc-entry toc-h2"><a href="#example-of-a-pojo">Example of a POJO</a></li>
 </ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#what-is-jpa">What is JPA</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#characteristics-of-jpa">Characteristics of JPA</a></li>
+</ul>
+</li>
+</ul><h1 id="what-is-a-pojo">
+<a class="anchor" href="#what-is-a-pojo" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a POJO</h1>
+<ul>
+  <li>POJO stands for Plain Old Java Object, which is a term used to describe a Java object that does not depend on any framework, container or library outside of the core Java libraries.
+    <h2 id="characteristics-of-a-pojo">
+<a class="anchor" href="#characteristics-of-a-pojo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Characteristics of a POJO</h2>
+  </li>
+  <li>Simple: A POJO should be simple, with minimal dependencies and clear and concise code.</li>
+  <li>Accessible: POJOs are easy to access and manipulate since they do not depend on any third-party framework or library.</li>
+  <li>Serializable: A POJO should be serializable, meaning it can be converted to a byte stream and back to an object, which is useful for things like data transfer and storage.</li>
+  <li>Testable: POJOs are easy to test since they do not depend on any external libraries or frameworks.</li>
+  <li>Standard: POJOs should follow standard Java conventions and be written in accordance with the JavaBeans specification.
+    <h2 id="example-of-a-pojo">
+<a class="anchor" href="#example-of-a-pojo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example of a POJO</h2>
+    <p><img src="https://user-images.githubusercontent.com/89223545/222540548-a975f78c-bbba-427b-955b-3d0314b2e1e4.png" alt="POJO"></p>
+  </li>
+  <li>In this example, we can see a simple POJo that represents a person
+    <ul>
+      <li>It has two private fields, name and age, along with getters and setters for each field.</li>
+      <li>The constructor takes in values for the name and age fields and initializes them.
+        <h1 id="what-is-jpa">
+<a class="anchor" href="#what-is-jpa" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is JPA</h1>
+      </li>
+    </ul>
+  </li>
+  <li>JPA stands for Java Persistence API. It is a specification in the Java programming language for managing relational data in applications.</li>
+  <li>JPA defines a set of interfaces and classes that provide a standard way to map Java objects to relational database tables and to perform common database operations such as creating, reading, updating, and deleting records.</li>
+  <li>JPA supports object-relational mapping (ORM), which means that developers can work with Java objects in their code and JPA will handle the details of translating those objects to and from database records.
+    <ul>
+      <li>This can simplify development by abstracting away many of the complexities of working with a relational database.
+        <h2 id="characteristics-of-jpa">
+<a class="anchor" href="#characteristics-of-jpa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Characteristics of JPA</h2>
+      </li>
+    </ul>
+  </li>
+  <li>Firstly you have  to create an entity class that prepresents the table you want to work with
+<img src="https://user-images.githubusercontent.com/89223545/222541566-3c2f01bb-abdc-48d7-956c-173d765c6baa.png" alt="Entity Class">
+</li>
+  <li>Next, you’ll need to create a repository interface that extends the JpaRepository interface.
+<img src="https://user-images.githubusercontent.com/89223545/222541720-1c616758-e504-4472-9802-5a35b80ccb43.png" alt="Extending JpaRepository">
+</li>
+  <li>Finally, you have to you can use this repository to perform CRUD operations on the “users” table. Here are some examples:
+<img src="https://user-images.githubusercontent.com/89223545/222542072-c9728e20-d93a-4857-afd8-30d9482656ec.png" alt="CRUD Implementation">
+</li>
+  <li>Overall, this service class uses the UserRepository to perform CRUD operations on the “users” table.</li>
+  <li>The createUser method creates a new user and saves it to the database.</li>
+  <li>The getUserById method retrieves a user by their ID. The updateUserPassword method updates a user’s password</li>
+</ul>
+
 
   </div><a class="u-url" href="/OfficialTri1PranavCSA/markdown/2023/03/02/POJO-Blog.html" hidden></a>
 </article>
