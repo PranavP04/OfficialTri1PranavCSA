@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -471,10 +471,27 @@ Elements with odd indexes:
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="c1">// FRQ Array Lists</span>
 <span class="c1">//Part a</span>
-<span class="kd">public</span> <span class="kt">void</span> <span class="nf">addMembers</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">names</span><span class="p">,</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span> <span class="p">:</span> <span class="n">names</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">MemberInfo</span> <span class="n">member</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MemberInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span> <span class="c1">// Assuming all new members are initially in good standing</span>
-        <span class="n">memberList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">member</span><span class="p">);</span>
+<span class="kd">class</span> <span class="nc">MemberInfo</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">goodStanding</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">MemberInfo</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kt">boolean</span> <span class="n">goodStanding</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">gradYear</span> <span class="o">=</span> <span class="n">gradYear</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">goodStanding</span> <span class="o">=</span> <span class="n">goodStanding</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getGradYear</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">gradYear</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">inGoodStanding</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">goodStanding</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getMemberName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -494,23 +511,85 @@ Elements with odd indexes:
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="c1">//Part B</span>
-<span class="kd">public</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="nf">removeMembers</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">graduatedMembers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
 
-    <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">memberList</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">iterator</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span> <span class="p">{</span>
-        <span class="n">MemberInfo</span> <span class="n">member</span> <span class="o">=</span> <span class="n">iterator</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">member</span><span class="p">.</span><span class="na">getGradYear</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">year</span> <span class="o">&amp;&amp;</span> <span class="n">member</span><span class="p">.</span><span class="na">inGoodStanding</span><span class="p">())</span> <span class="p">{</span>
-            <span class="n">graduatedMembers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">member</span><span class="p">);</span>
-            <span class="n">iterator</span><span class="p">.</span><span class="na">remove</span><span class="p">();</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClubMembers</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">memberList</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">ClubMembers</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">memberList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Adds new club members to memberList.</span>
+<span class="cm">     * Precondition: names is a non-empty array.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addMembers</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">names</span><span class="p">,</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span> <span class="p">:</span> <span class="n">names</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">MemberInfo</span> <span class="n">member</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MemberInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+            <span class="n">memberList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">member</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="k">return</span> <span class="n">graduatedMembers</span><span class="p">;</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Removes members who have graduated and returns a list of members who have</span>
+<span class="cm">     * graduated and are in good standing.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="nf">removeMembers</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">graduatedMembers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">memberList</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">MemberInfo</span> <span class="n">member</span> <span class="o">=</span> <span class="n">memberList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">member</span><span class="p">.</span><span class="na">getGradYear</span><span class="p">()</span> <span class="o">==</span> <span class="n">year</span> <span class="o">&amp;&amp;</span> <span class="n">member</span><span class="p">.</span><span class="na">inGoodStanding</span><span class="p">())</span> <span class="p">{</span>
+                <span class="n">graduatedMembers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">member</span><span class="p">);</span>
+                <span class="n">memberList</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+                <span class="n">i</span><span class="o">--</span><span class="p">;</span> <span class="c1">// Decrement the index as the list size has changed</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">graduatedMembers</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Tester method</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ClubMembers</span> <span class="n">club</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClubMembers</span><span class="p">();</span>
+
+        <span class="c1">// Adding members</span>
+        <span class="n">String</span><span class="o">[]</span> <span class="n">names</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Emily&quot;</span><span class="p">,</span> <span class="s">&quot;David&quot;</span><span class="p">};</span>
+        <span class="kt">int</span> <span class="n">gradYear</span> <span class="o">=</span> <span class="mi">2024</span><span class="p">;</span>
+        <span class="n">club</span><span class="p">.</span><span class="na">addMembers</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">);</span>
+
+        <span class="c1">// Removing members who graduated in a specific year</span>
+        <span class="kt">int</span> <span class="n">yearToRemove</span> <span class="o">=</span> <span class="mi">2024</span><span class="p">;</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">removedMembers</span> <span class="o">=</span> <span class="n">club</span><span class="p">.</span><span class="na">removeMembers</span><span class="p">(</span><span class="n">yearToRemove</span><span class="p">);</span>
+
+        <span class="c1">// Displaying removed members</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Removed members who graduated in &quot;</span> <span class="o">+</span> <span class="n">yearToRemove</span> <span class="o">+</span> <span class="s">&quot;:&quot;</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">MemberInfo</span> <span class="n">member</span> <span class="p">:</span> <span class="n">removedMembers</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">member</span><span class="p">.</span><span class="na">getGradYear</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">member</span><span class="p">.</span><span class="na">getMemberName</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="n">ClubMembers</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Removed members who graduated in 2024:
+2024: John
+2024: Emily
+2024: David
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
