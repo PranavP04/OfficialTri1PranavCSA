@@ -470,6 +470,44 @@ Elements with odd indexes:
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="c1">// FRQ Array Lists</span>
+<span class="c1">//Part a</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">addMembers</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">names</span><span class="p">,</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span> <span class="p">:</span> <span class="n">names</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">MemberInfo</span> <span class="n">member</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MemberInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span> <span class="c1">// Assuming all new members are initially in good standing</span>
+        <span class="n">memberList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">member</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//Part B</span>
+<span class="kd">public</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="nf">removeMembers</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">graduatedMembers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+    <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">memberList</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">iterator</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">MemberInfo</span> <span class="n">member</span> <span class="o">=</span> <span class="n">iterator</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">member</span><span class="p">.</span><span class="na">getGradYear</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">year</span> <span class="o">&amp;&amp;</span> <span class="n">member</span><span class="p">.</span><span class="na">inGoodStanding</span><span class="p">())</span> <span class="p">{</span>
+            <span class="n">graduatedMembers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">member</span><span class="p">);</span>
+            <span class="n">iterator</span><span class="p">.</span><span class="na">remove</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">graduatedMembers</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
